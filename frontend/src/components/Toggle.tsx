@@ -19,8 +19,6 @@ const Toggle = (props: ToggleProps) => {
             role="switch"
             aria-checked={props.tab === 'youtube'}
         >
-
-
             <span className={`absolute   left-2 text-xl font-medium transition-opacity ${props.tab === 'pdf' ? 'opacity-100' : 'opacity-50  cursor-pointer'}`}>PDF</span>
             <span className={`absolute  right-2 text-xl font-medium transition-opacity ${props.tab === 'youtube' ? 'opacity-100  ' : 'opacity-50 cursor-pointer'}`}>YouTube</span>
         </button>

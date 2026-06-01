@@ -9,12 +9,12 @@ export class QnaController {
   async askPdf(
     @Body() askDto: AskDto,
   ): Promise<{ question: string; answer: string }> {
-    return await this.qnaService.askGemini(askDto.question, 'pdf');
+    return await this.qnaService.askGemini(askDto.question);
   }
   @Post('youtube')
   async askYoutube(
     @Body() askDto: AskDto,
   ): Promise<{ question: string; answer: string }> {
-    return await this.qnaService.askGemini(askDto.question, 'youtube');
+    return await this.qnaService.askGemini(askDto.question);
   }
 }

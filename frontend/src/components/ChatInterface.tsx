@@ -101,7 +101,8 @@ export function ChatInterface({ Name, onReset, type }: ChatInterfaceProps) {
       </header>
 
       {/* Messages */}
-      <div className="flex-1 overflow-y-auto px-6 py-8">
+      <div className="flex-1 overflow-y-auto px-6 py-8 scrollbar-thin scrollbar-thumb-transparent hover:scrollbar-thumb-neutral-400/50">
+
         <div className="max-w-3xl mx-auto space-y-6">
           {messages.map((message) => (
             <div

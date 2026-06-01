@@ -10,7 +10,6 @@ export class YoutubeService {
       if (!videoId) return '';
 
       const transcript = await fetchTranscript(videoId, { lang: 'en' });
-      console.log(transcript);
       const text = transcript
         .map((line) => line.text)
         .join(' ')
